@@ -1,0 +1,35 @@
+RELATÓRIO DE COMPARAÇÃO COMPLETO
+==================================================
+
+Porcentagem de Similaridade: 33.21%
+Total de linhas no CSV: 3570
+Total de linhas no XLSX: 3392
+Linhas faltando no CSV: 49
+Linhas extras no CSV: 227
+
+INTERPRETAÇÃO DA SIMILARIDADE:
+❌ Grandes discrepâncias entre os arquivos
+
+CORREÇÕES APLICADAS NA COMPARAÇÃO:
+- Normalização de valores nulos (None/NaN/nan)
+- Padronização de formatos de data
+- Uniformização de números decimais
+- Normalização de strings (trim e uppercase)
+
+PRINCIPAIS DIFERENÇAS ENCONTRADAS:
+Linhas presentes no XLSX mas faltando no CSV:
+                                                          SUBGRUPO   HSO    OD   DUT                           PROCEDIMENTO              CAPITULO  REF RN (alteracao)             VIGENCIA                 GRUPO   HCO  AMB   PAC
+12  CONSULTAS, VISITAS HOSPITALARES OU ACOMPANHAMENTO DE PACIENTES  None  None  None  CONSULTA/AVALIACAO COM FISIOTERAPEUTA  PROCEDIMENTOS GERAIS  REF       541/2022  2022-08-01 00:00:00  PROCEDIMENTOS GERAIS  None  AMB  None
+18  CONSULTAS, VISITAS HOSPITALARES OU ACOMPANHAMENTO DE PACIENTES  None  None  None       CONSULTA/AVALIACAO COM PSICOLOGO  PROCEDIMENTOS GERAIS  REF       541/2022  2022-08-01 00:00:00  PROCEDIMENTOS GERAIS  None  AMB  None
+19  CONSULTAS, VISITAS HOSPITALARES OU ACOMPANHAMENTO DE PACIENTES  None  None  None                   SESSAO COM PSICOLOGO  PROCEDIMENTOS GERAIS  REF       541/2022  2022-08-01 00:00:00  PROCEDIMENTOS GERAIS  None  AMB  None
+
+Linhas presentes no CSV mas faltando no XLSX:
+                                                          SUBGRUPO  HSO   OD  DUT                           PROCEDIMENTO              CAPITULO  REF  RN (alteracao)    VIGENCIA                 GRUPO  HCO  AMB  PAC
+12  CONSULTAS, VISITAS HOSPITALARES OU ACOMPANHAMENTO DE PACIENTES  NaN  NaN  NaN  CONSULTA/AVALIACAO COM FISIOTERAPEUTA  PROCEDIMENTOS GERAIS  REF        541/2022  01/08/2022  PROCEDIMENTOS GERAIS  NaN  AMB  NaN
+18  CONSULTAS, VISITAS HOSPITALARES OU ACOMPANHAMENTO DE PACIENTES  NaN  NaN  NaN       CONSULTA/AVALIACAO COM PSICOLOGO  PROCEDIMENTOS GERAIS  REF        541/2022  01/08/2022  PROCEDIMENTOS GERAIS  NaN  AMB  NaN
+19                                                        SUBGRUPO  HSO   OD  DUT                           PROCEDIMENTO              CAPITULO  REF  RN (alteracao)    VIGENCIA                 GRUPO  HCO  AMB  PAC
+
+SUGESTÕES:
+1. Verifique as diferenças listadas acima
+2. Confira a formatação dos dados nas planilhas
+3. Valide os processos de extração e transformação
