@@ -1,0 +1,45 @@
+.search-header {
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.search-header h1 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    margin-top: 0.75rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-weight: 400;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.decoration-line {
+    height: 1px;
+    width: clamp(60px, 15vw, 100px);
+    background: linear-gradient(90deg, transparent, #3498db, transparent);
+}
+
+/* ajuste da classe para utilizar com Iconify */
+.heart-icon {
+    color: var(--danger);
+    font-size: 1.75rem;
+    opacity: 0.9;
+    margin: 0 0.5rem; /* Espaçamento entre as linhas decorativas e o ícone */
+}

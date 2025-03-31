@@ -1,0 +1,36 @@
+# API Operadoras ANS
+
+###
+# Variáveis Globais
+@nome = Amil
+#Ex:  Bradesco, Amil, SulAmérica, Hapvida, NotreDame
+@uf = SP
+#Ex: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SE, TO
+@cidade = Campinas
+@modalidade = Filantropia
+#Ex: Seguradora Especializada em Saúde, Cooperativa Médica, Cooperativa Odontológica, Odontologia de Grupo, Medicina de Grupo, Autogestão, Filantropia
+
+
+###
+
+# @name 1. Busca por Nome (q)
+GET http://192.168.0.14:8000/api/operadoras?q={{nome}}
+Accept: application/json
+
+###
+
+# @name 2. Busca por UF e Cidade
+GET http://192.168.0.14:8000/api/operadoras?uf={{uf}}&cidade={{cidade}}
+Accept: application/json
+
+###
+
+# @name 3. Busca por Modalidade
+GET http://192.168.0.14:8000/api/operadoras?modalidade={{modalidade}}
+Accept: application/json
+
+###
+
+# @name 4. Validação de Erro (sem parâmetros)
+GET http://192.168.0.14:8000/api/operadoras
+Accept: application/json

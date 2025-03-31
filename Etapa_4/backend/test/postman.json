@@ -1,0 +1,293 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890",
+    "name": "API Operadoras ANS",
+    "description": "Coleção para testar exclusivamente o endpoint da api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Busca por Nome (q)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://192.168.0.14:8000/api/operadoras?q={{nomes}}",
+          "protocol": "http",
+          "host": ["192","168","0","14"],
+          "port": "8000",
+          "path": ["api","operadoras"],
+          "query": [
+            {
+              "key": "q",
+              "value": "{{nome}}",
+              "description": "Termo para busca no Nome Fantasia/Razão Social"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2. Busca por UF e Cidade",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://192.168.0.14:8000/api/operadoras?uf={{uf}}&cidade={{cidade}}",
+          "protocol": "http",
+          "host": ["192","168","0","14"],
+          "port": "8000",
+          "path": ["api","operadoras"],
+          "query": [
+            {
+              "key": "uf",
+              "value": "{{uf}}",
+              "description": "Sigla do estado (2 caracteres)"
+            },
+            {
+              "key": "cidade",
+              "value": "{{cidade}}",
+              "description": "Nome da cidade (minúsculo, sem acentos)"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3. Busca por Modalidade",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://192.168.0.14:8000/api/operadoras?modalidade={{modalidade}}",
+          "protocol": "http",
+          "host": ["192","168","0","14"],
+          "port": "8000",
+          "path": ["api","operadoras"],
+          "query": [
+            {
+              "key": "modalidade",
+              "value": "{{modalidade}}",
+              "description": "Tipo de operadora (exatamente como no CSV)"
+            },
+            {
+              "key": "uf",
+              "value": "{{uf}}",
+              "description": "Sigla do estado (2 caracteres)"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "4. Validação de Erro (sem parâmetros)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://192.168.0.14:8000/api/operadoras",
+          "protocol": "http",
+          "host": ["192","168","0","14"],
+          "port": "8000",
+          "path": ["api","operadoras"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "nome",
+      "value": "Amil",
+      "type": "string"
+    },
+    {
+      "key": "operadora_2",
+      "value": "Bradesco Saúde",
+      "type": "string"
+    },
+    {
+      "key": "operadora_3",
+      "value": "Unimed",
+      "type": "string"
+    },
+    {
+      "key": "operadora_4",
+      "value": "SulAmérica",
+      "type": "string"
+    },
+    {
+      "key": "operadora_5",
+      "value": "Hapvida",
+      "type": "string"
+    },
+    {
+      "key": "operadora_6",
+      "value": "NotreDame",
+      "type": "string"
+    },
+    {
+      "key": "uf",
+      "value": "SP",
+      "type": "string"
+    },
+    {
+      "key": "cidade",
+      "value": "Campinas",
+      "type": "string"
+    },
+    {
+      "key": "modalidade",
+      "value": "Cooperativa Médica",
+      "type": "string"
+    },
+    {
+      "key": "estado_1",
+      "value": "AC",
+      "type": "string"
+    },
+    {
+      "key": "estado_2",
+      "value": "AL",
+      "type": "string"
+    },
+    {
+      "key": "estado_3",
+      "value": "AP",
+      "type": "string"
+    },
+    {
+      "key": "estado_4",
+      "value": "AM",
+      "type": "string"
+    },
+    {
+      "key": "estado_5",
+      "value": "BA",
+      "type": "string"
+    },
+    {
+      "key": "estado_6",
+      "value": "CE",
+      "type": "string"
+    },
+    {
+      "key": "estado_7",
+      "value": "DF",
+      "type": "string"
+    },
+    {
+      "key": "modalidade",
+      "value": "Seguradora Especializada em Saúde",
+      "type": "string"
+    },
+    {
+      "key": "modalidade_2",
+      "value": "Cooperativa Médica",
+      "type": "string"
+    },
+    {
+      "key": "modalidade_3",
+      "value": "Cooperativa Odontológica",
+      "type": "string"
+    },
+    {
+      "key": "modalidade_4",
+      "value": "Odontologia de Grupo",
+      "type": "string"
+    },
+    {
+      "key": "modalidade_5",
+      "value": "Medicina de Grupo",
+      "type": "string"
+    },
+    {
+      "key": "modalidade_6",
+      "value": "Autogestão",
+      "type": "string"
+    },
+    {
+      "key": "modalidade_7",
+      "value": "Filantropia",
+      "type": "string"
+    }
+  ]
+,
+  "event": [
+    {
+      "listen": "test",
+      "script": {
+        "exec": [
+          "// Teste automático: Verifica se retorna status 200",
+          "pm.test(\"Status deve ser 200\", () => {",
+          "    pm.response.to.have.status(200);",
+          "});",
+          "",
+          "// Teste automático: Valida formato JSON",
+          "pm.test(\"Resposta deve ser JSON válido\", () => {",
+          "    pm.response.to.be.json;",
+          "});",
+          "",
+          "// Teste automático: Verifica se existe 'results' e que não está vazio",
+          "pm.test(\"Resultado deve conter um array 'results' não vazio\", () => {",
+          "    const jsonData = pm.response.json();",
+          "    pm.expect(jsonData).to.have.property('results').that.is.an('array').and.not.empty;",
+          "});",
+          "",
+          "// Teste automático: Valida propriedades essenciais obrigatórias do CSV",
+          "pm.test(\"Cada item em results deve ter 'Registro_ANS' e 'Razao_Social' não nulos\", () => {",
+          "    const obrigatorias = [\"Registro_ANS\", \"Razao_Social\"];",
+          "    const jsonData = pm.response.json();",
+          "    jsonData.results.forEach((item) => {",
+          "        obrigatorias.forEach((chave) => {",
+          "            pm.expect(item).to.have.property(chave).that.is.not.null;",
+          "            pm.expect(item[chave]).to.not.equal(\"\");",
+          "        });",
+          "    });",
+          "});",
+          "",
+          "// Teste automático (CORRIGIDO): Checa corretamente se algum resultado contém termo buscado",
+          "pm.test(\"Pelo menos um resultado deve conter termo buscado\", () => {",
+          "    const nomeVar = pm.variables.get(\"nome\");",
+          "    const cidadeVar = pm.variables.get(\"cidade\");",
+          "    const modalidadeVar = pm.variables.get(\"modalidade\");",
+          "",
+          "    const jsonData = pm.response.json();",
+          "",
+          "    const encontrado = jsonData.results.some((item) => {",
+          "        return (nomeVar && ((item[\"Nome_Fantasia\"] && item[\"Nome_Fantasia\"].toLowerCase().includes(nomeVar.toLowerCase())) || (item[\"Razao_Social\"] && item[\"Razao_Social\"].toLowerCase().includes(nomeVar.toLowerCase()))))",
+          "        || (cidadeVar && item[\"Cidade\"] && item[\"Cidade\"].toLowerCase().includes(cidadeVar.toLowerCase()))",
+          "        || (modalidadeVar && item[\"Modalidade\"] && item[\"Modalidade\"].toLowerCase().includes(modalidadeVar.toLowerCase()));",
+          "    });",
+          "",
+          "    pm.expect(encontrado, \"Deve haver ao menos um resultado contendo o termo buscado.\").to.be.true;",
+          "});"
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ]
+}
