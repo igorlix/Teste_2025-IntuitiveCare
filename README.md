@@ -33,7 +33,6 @@ Teste-IntuitiveCare
 │   │   └── test.java.br.com.intuitivecare
 │   └── SCRAPING.md
 │
-├── Etapa_2              
 │
 ├── Etapa_3               # Banco de dados 
 │   ├── dados
