@@ -1,18 +1,19 @@
 # Teste de Nivelamento - IntuitiveCare
 Este projeto tem como objetivo atender as etapas do teste de nivelamento para a vaga de estagiário na **IntuitiveCare**.
 ## 🛠️ Tecnologias Utilizadas
-- Java
-- Python
-- MySQL
-- Flask
-- Vue.js
-- IntelliJ IDEA
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 
 ## 📌 Etapas Realizadas:
-1. **TESTE DE WEB SCRAPING**
-2. **TESTE DE TRANSFORMAÇÃO DE DADOS**
-3. **TESTE DE BANCO DE DADOS**
-4. **TESTE DE API e Web Interface**
+1. [**TESTE DE WEB SCRAPING**](Etapa_1/SCRAPING.md)
+2. [**TESTE DE TRANSFORMAÇÃO DE DADOS**](Etapa_2/TRANSFORMARDADOS.md)
+3. [**TESTE DE BANCO DE DADOS**](Etapa_3/DADOS.md)
+4. [**TESTE DE API e Web Interface**](Etapa_4/API.md)
 
 ## 📂 Estrutura Geral do Repositório
 ``` plaintext

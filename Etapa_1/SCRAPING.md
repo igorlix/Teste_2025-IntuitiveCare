@@ -38,7 +38,7 @@ java -version
     </dependency>
 </dependencies>
 ```
-## 🧩 Componentes Detalhados do Sistema
+## Componentes Detalhados do Sistema
 ### 1. `MainScraping` — Controlador Principal
 Responsabilidades:
 - Orquestrar todo o fluxo do sistema.
