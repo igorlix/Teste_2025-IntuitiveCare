@@ -1,4 +1,4 @@
-# 📚 Documentação do Processo de Scraping
+# 📚 SCRAPING.md Etapa 1 (Teste de Nivelamento)
 Este documento descreve detalhadamente o sistema implementado para automatizar a captura e processamento dos arquivos PDF relacionados aos Anexos I e II de uma página web específica do Governo Brasileiro (ANS). O sistema realiza o scraping, identifica links relevantes, faz download dos arquivos PDF e os agrupa num arquivo ZIP único.
 ## 🔄 Fluxo de Execução
 O processo compreende as seguintes etapas sequenciais:
