@@ -21,7 +21,7 @@ public class MainScraping {
 
             anexos.forEach(anexo -> {
                 try {
-                    baixa.baixarPDF(anexo, "Etapas_1_2/src/main/output/anexos/");
+                    baixa.baixarPDF(anexo, "Etapa_1/src/main/output/anexos/");
                 } catch (IOException e) {
                     System.err.println("Erro ao baixar o PDF: " + anexo.getUrl());
                     e.printStackTrace();
@@ -30,7 +30,7 @@ public class MainScraping {
 
             compacta.compactar(
                     anexos.stream().map(Anexo::getNome).collect(Collectors.toList()),
-                    "Etapas_1_2/src/main/output/Anexos.zip"
+                    "Etapa_1/src/main/output/Anexos.zip"
             );
 
             System.out.println("Processo concluído! Arquivo compactado criado em: output/Anexos.zip");

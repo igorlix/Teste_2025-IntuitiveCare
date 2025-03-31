@@ -16,7 +16,7 @@ public class PDFCompactar {
 
         try (ZipOutputStream zipOut = new ZipOutputStream(new FileOutputStream(zipSaida))) {
             for (String arquivo : arquivos) {
-                Path filePath = Paths.get("Etapas_1_2/src/main/output/anexos", arquivo);
+                Path filePath = Paths.get("Etapa_1/src/main/output/anexos", arquivo);
 
                 if (Files.exists(filePath)) {
                     Path fileName = filePath.getFileName();
