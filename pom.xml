@@ -36,7 +36,7 @@
     <build>
         <resources>
             <resource>
-                <directory>Etapas_1/src/main/output</directory>
+                <directory>Etapa_1/src/main/output</directory>
                 <includes>
                     <include>**/*.csv</include>
                     <include>**/*.sql</include>
